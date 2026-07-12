@@ -162,7 +162,7 @@ a { color: inherit; text-decoration: none; }
   text-align: center;
   position: relative;
   overflow: hidden;
-  padding-top: 4rem;
+  padding-top: 0;
 }
 /* Real smoke texture (mostly black, subtle grey wisps) */
 .hero::before, .cta::before {
@@ -171,20 +171,20 @@ a { color: inherit; text-decoration: none; }
   opacity: 0.55; will-change: transform;
 }
 .cta::before { opacity: 0.4; transform: scaleX(-1); }
-.hero__content { position: relative; z-index: 2; max-width: 52rem; }
+.hero__content { position: relative; z-index: 2; max-width: 48rem; }
 .hero__title {
   font-family: var(--serif); font-weight: 400;
-  font-size: clamp(2.8rem, 6vw, 5.3rem); line-height: 0.98; letter-spacing: -0.015em;
+  font-size: clamp(2.7rem, 5vw, 4.7rem); line-height: 1.05; letter-spacing: -0.015em;
 }
 .hero__title .line { display: block; overflow: hidden; }
 .hero__title em { font-style: italic; color: #d9d9d9; }
 .hero__copy {
-  color: var(--gray); font-size: clamp(0.95rem, 1vw, 1rem);
-  max-width: 600px;
-  margin: 2.8rem auto 0;
+  color: var(--gray); font-size: 1.02rem;
+  max-width: 640px;
+  margin: 2rem auto 0;
   line-height: 1.8;
 }
-.hero__actions { display: flex; gap: 1rem; justify-content: center; margin-top: 3.5rem; flex-wrap: wrap; }
+.hero__actions { display: flex; gap: 1rem; justify-content: center; margin-top: 2.3rem; flex-wrap: wrap; }
 
 /* Smoke textures */
 .smoke {
