@@ -161,30 +161,19 @@ a { color: inherit; text-decoration: none; }
 }
 .cta::before { opacity: 0.4; transform: scaleX(-1); }
 .hero__content { position: relative; z-index: 2; max-width: 60rem; }
-.hero__eyebrow {
-  font-size: 0.75rem; letter-spacing: 0.28em; text-transform: uppercase;
-  color: var(--gray-dim); margin-bottom: 2.2rem;
-}
 .hero__title {
   font-family: var(--serif); font-weight: 400;
-  font-size: clamp(2.9rem, 8.5vw, 7.2rem); line-height: 0.98; letter-spacing: -0.015em;
+  font-size: clamp(2rem, 5.5vw, 5rem); line-height: 0.98; letter-spacing: -0.015em;
 }
 .hero__title .line { display: block; overflow: hidden; }
 .hero__title em { font-style: italic; color: var(--gray); }
 .hero__copy {
-  color: var(--gray); font-size: clamp(1rem, 1.5vw, 1.22rem);
-  max-width: 44rem; margin: 2.4rem auto 0; line-height: 1.7;
+  color: var(--gray); font-size: clamp(0.95rem, 1.15vw, 1.08rem);
+  max-width: 650px;
+  margin: 2rem auto 0;
+  line-height: 1.8;
 }
 .hero__actions { display: flex; gap: 1rem; justify-content: center; margin-top: 2.8rem; flex-wrap: wrap; }
-
-.scroll-hint {
-  position: absolute; bottom: 2.4rem; left: 50%; transform: translateX(-50%);
-  display: flex; flex-direction: column; align-items: center; gap: 0.8rem; z-index: 2;
-  font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gray-dim);
-}
-.scroll-hint__line { width: 1px; height: 46px; background: linear-gradient(var(--gray-dim), transparent); position: relative; overflow: hidden; }
-.scroll-hint__line::after { content: ""; position: absolute; top: -50%; left: 0; width: 100%; height: 50%; background: var(--white); animation: scrollPulse 2.4s var(--ease) infinite; }
-@keyframes scrollPulse { 0% { transform: translateY(-100%); } 60%, 100% { transform: translateY(300%); } }
 
 /* Smoke textures */
 .smoke {
